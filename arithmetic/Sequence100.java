@@ -1,19 +1,26 @@
 package arithmetic;
-/**
- 등차 수열 : 연속하는 두 항의 차이가 모두 일정한
- 공차(common difference)는  공통적으로 나타나는 차이
- 
- * */
+
 public class Sequence100 {
 
 	public static void main(String[] args) {
-		int i=0, x = 0;
-		String re = "";
-		for (int j = 1; j <= 100; j++) {
-			re += j +"+";
-			x += j;
+		int i=0 ,x = 0;
+
+		while (true) {
+			i++;
+			x += i;
+			if(i <100){
+				continue;
+			}else{
+				break;
+			}
 		}
-		System.out.println(re+"\n"+x);
+
+		System.out.println("====================");
+		System.out.println("1+2+3+...+100까지 합");
+		System.out.println("====================");
+		System.out.println(x);
+		System.out.println("====================");
+		
 	}
 
 }
