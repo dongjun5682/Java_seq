@@ -18,25 +18,27 @@ S is 119800
 public class Sequence119800 {
 
 	public static void main(String[] args) {
-
 		int A = 2;
 		int D = 6;
 		int S = A;
 		int N = 2;
 		int AN = 0;
 		while(true){
-			AN = A +(N-1)*D;
-			S += AN; 
-			System.out.println("Count is "+ N +", "+"Number is "+ AN + ", "+"Sum is "+S);
 			N++;
-			if(N <= 200){
+			AN =A + D;
+			S += AN;
+//			AN = A +(N-1)*D;
+//			S += AN; 
+			System.out.printf("Count is %d, Number is %d, Sum is %d \n",N,AN,S);
+//			N++;
+			if(N < 201){
 				continue;
 			}else{
 				break;
 			}
 
 		}
-		System.out.println("S is "+ S);
+		System.out.printf("S is %d", S);
 
 	}
 }
